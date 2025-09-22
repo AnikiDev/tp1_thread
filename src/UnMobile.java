@@ -23,6 +23,15 @@ class UnMobile extends JPanel implements Runnable
                 telleExcp.printStackTrace();
             }
         }
+
+        for (sonDebDessin = saLargeur; sonDebDessin < saLargeur + sonPas; sonDebDessin -= sonPas) {
+            repaint();
+            try {
+                Thread.sleep(sonTemps);
+            } catch (InterruptedException telleExcp) {
+                telleExcp.printStackTrace();
+            }
+        }
     }
 
 
